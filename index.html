@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>
+        igal web page
+    </title>
+
+    <script>
+        var firstName = 'igal';
+        var lastName = 'Groisman';
+        var age = 40;
+        var isCool = false;
+
+        var igal = {
+            firstName: 'igal',
+            lastName: 'groisman',
+            age: 60,
+            friends: ['guy','shay','grisha'],
+        }
+
+        var isIgal = firstName == 'igal' && lastName == 'Groisman'
+        var isAgeGood = age > 32 || age == 25;
+        var isIgalCool = isCool || age == 25; 
+
+        if (age < 0 || age > 120) {
+
+            console.log('illegal range');
+
+        } else if (age > 18 && age < 30) {
+
+            console.log('time to drink');
+
+        } else if (age > 30 && age < 50) {
+
+            console.log('career time');
+
+        } else {
+
+            console.log('pensia time');
+
+        }
+
+        // console.log('hi im ' +firstName +'-' +lastName +' and im ' +age +' yo and im cool? ' +isCool);
+        // console.log(`hi im ${igal.firstName}-${igal.lastName} and im ${igal.age} yo`);
+        // console.log(igal.friends[2]);
+
+        // age < 0 "illegal range"
+        // age > 18 &&  < 30 "time to drink"
+        // age > 30 < 50 "career time"
+        // age > 50 && < 120 "pensia time"
+        // age > 120 illegal range
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>welcome</h1>
+    <input type="date">
+    <button>send</button>
+    <img id="cat" src="https://kerenagam.co.il/wp-content/uploads/2021/06/Thinking-of-getting-a-cat.png" alt="cat">
+
+</body>
+
+</html>
